@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>challenge.io</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="page">
+        <div class="black-screen-alpha" id="black-screen-alpha" style="display: none;">
+            <div class="box-wrapper">
+                <div class="redirecting" id="redirecting" style="display: none;">
+                    <p class="redirecting-text">Connecting...</p>
+                </div>
+                <div class="box-notification" id="box-notification" style="display: none;">
+                    <div class="box-close-btn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" id="close-btn">
+                            <path d="M12.7,12l6.6,6.6l-0.7,0.7L12,12.7l-6.6,6.6l-0.7-0.7l6.6-6.6L4.6,5.4l0.7-0.7l6.6,6.6l6.6-6.6l0.7,0.7L12.7,12z"></path>
+                        </svg>
+                    </div>
+                    <div class="box-content">
+                        <p id="box-text-content">
+                        </p>
+                    </div>
+                    <div class="box-btn-content">
+                        <button class="box-btn" id="box-btn-type">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Header">
+            <p>challenge.io</p>
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <p>Welcome to challenge.io<br>Please type your name to join the game.</p>
+                </div>
+                <div class="form-content">
+                    <form action="./login.php" method="post">
+                        <div class="form-input-content input-content">
+                            <input type="text" name="name" placeholder="Name" spellcheck="false" id="input">
+                        </div>
+                        <div class="form-input-content button-content">
+                            <div class="submit-btn" id="submit-btn">
+                                <p>Join</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/login.js"></script>
+</html>

@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "Adobe Clean UX";
+    src: url("../fonts/AdobeCleanUX-Bold.woff") format("woff");
+    src: url("../fonts/AdobeCleanUX-Bold.woff2") format("woff2");
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,li,td,th,button,input,textarea,label {
+    font-family: "Adobe Clean UX";
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.black-screen-alpha{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000be;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.box-wrapper{
+    margin: 0 30px;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-notification{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-close-btn svg {
+    float: right;
+    cursor: pointer;
+}
+
+.box-content{
+    margin-block-start: 15px;
+    margin-block-end: 15px;
+}
+
+.box-btn-content{
+    margin-left: auto;
+}
+
+.box-btn{
+        background-color: #008cff;
+        border: 0;
+        padding: 8px 20px;
+        border-radius: 20px;
+        color: white;
+        letter-spacing: normal;
+        cursor: pointer;
+        width: fit-content;
+}
+
+.box-btn:hover{
+    background-color: #0074ff;
+}
+
+.redirecting{
+    display: flex;
+    flex-direction: column;
+}
+
+.redirecting-text{
+    color: white;
+    font-size: 45px;
+}
+
+.Header{
+    background-color: #f5f5f5;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.Header p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.content{
+    position: fixed;
+    top: 53px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
