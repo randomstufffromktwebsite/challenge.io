@@ -1,6 +1,7 @@
 
 .content{
     background: linear-gradient(120deg, #ff00bb, #ffb300);
+    overflow-y: scroll;
 }
 
 .content-wrapper{
