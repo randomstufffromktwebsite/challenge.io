@@ -11,6 +11,7 @@
 <body>
     <div id="page">
         <div class="black-screen-alpha" id="black-screen-alpha" style="display: none;">
+            <div class="video" id="video" style="display: none;"></div>
             <div class="box-wrapper">
                 <div class="redirecting" id="redirecting" style="display: none;">
                     <p class="redirecting-text">Connecting...</p>
@@ -40,7 +41,6 @@
                     <p>Welcome to challenge.io<br>Please type your name to join the game.</p>
                 </div>
                 <div class="form-content">
-                    <form action="./login.php" method="post">
                         <div class="form-input-content input-content">
                             <input type="text" name="name" placeholder="Name" spellcheck="false" id="input">
                         </div>
@@ -49,9 +49,15 @@
                                 <p>Join</p>
                             </div>
                         </div>
-                    </form>
                 </div>
             </div>
+            <footer>
+                <p class="footer-text">challenge.io</p>
+                <div class="redirect-block">
+                    <p onclick="window.location='./policy.html'">Terms of Service</p>
+                    <p onclick="window.location='./policy.html'">Privacy Policy</p>
+                </div>
+            </footer>
         </div>
     </div>
 </body>

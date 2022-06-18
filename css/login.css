@@ -1,7 +1,6 @@
 
 .content{
     background: linear-gradient(120deg, #ff00bb, #ffb300);
-    overflow-y: scroll;
 }
 
 .content-wrapper{
@@ -49,4 +48,26 @@ input[type="text"]{
 
 .submit-btn:hover{
     background-color: #0074ff;
+}
+
+.video{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.video video{
+    margin: 25px;
+    width: 50%;
+    height: 50%;
+}
+
+.cameraVideo{
+    border-radius: 20px;
+}
+
+.cameraVideoSpeak{
+    border: 2px solid #00ff80;
 }
