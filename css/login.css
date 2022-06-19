@@ -62,6 +62,8 @@ input[type="text"]{
     margin: 25px;
     width: 50%;
     height: 50%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .cameraVideo{
