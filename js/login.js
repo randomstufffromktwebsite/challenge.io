@@ -30,9 +30,7 @@ submit_btn.onclick = function() {
             const video = document.createElement("video");
             video.className = "cameraVideo";
             video.setAttribute("playsinline", "");
-            video.setAttribute("autoplay", "");
-            self.muted = true;
-            self.controls = false;
+            video.setAttribute("autoplay", "true");
 
             const facingMode = "user";
             const constraints = {
@@ -43,11 +41,7 @@ submit_btn.onclick = function() {
             };
 
             navigator.mediaDevices.getUserMedia(constraints).then((stream) => {
-                const videoTracks = stream?.getVideoTracks() || [];
-                const selectedVideoTrack = videoTracks[0];
-                const newStream = new MediaStream();
-                newStream.addTrack(selectedVideoTrack);
-                video.srcObject = newStream;
+                video.srcObject = stream;
             });
 
             document.getElementById("video").appendChild(video);
